@@ -4,7 +4,7 @@ from universal_mcp.integrations import Integration
 
 class SemanticscholarApp(APIApplication):
     def __init__(self, integration: Integration = None, **kwargs) -> None:
-        super().__init__(name='semanticscholarapp', integration=integration, **kwargs)
+        super().__init__(name='semanticscholar', integration=integration, **kwargs)
         self.base_url = "/graph/v1"
 
     def post_graph_get_authors(self, fields=None, ids=None) -> dict[str, Any]:
